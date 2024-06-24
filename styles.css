@@ -74,6 +74,7 @@ img {
     text-align: center;
     border: none;
     color: #7342d6;
+    display: none;
 }
 
 .btn__menu--close {
@@ -342,7 +343,17 @@ footer {
     padding: 0 8px;
 }
 
+@media (max-width: 550px) {
+    .nav__links {
+        display: none;
+    }
+    .btn__menu {
+        display: block;
+    }
+
+}
 /*Small Phones, Tables, Large Phones */
+
 @media (max-width: 768px) {
     .header__description {
         padding: 0 24px;
@@ -353,21 +364,11 @@ footer {
     h2 {
         font-size: 26px;
     }
-    button {
+    .button {
         font-size: 18px;
     }
     .book {
         width: 50%;
-    }
-}
-
-
-@media (max-width: 550px) {
-    .nav__links {
-        display: none;
-    }
-    .btn__menu {
-        display: block;
     }
     .highlight {
         width: 100%;
@@ -376,3 +377,5 @@ footer {
         margin-bottom: 24px;
     }
 }
+
+
